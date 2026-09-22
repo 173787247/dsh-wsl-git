@@ -1,0 +1,7 @@
+- insert:
+    - id: dsh-wsl-git
+      name: dsh-wsl-git
+      config:
+        enabled: true
+        timeoutMs: 20000
+        allowRoots: []
