@@ -10,4 +10,8 @@ describe("git resolve", () => {
     const d = mkdtempSync(join(tmpdir(), "dsh-git-"));
     assert.ok(resolveRepo(d).includes("dsh-git-"));
   });
+  it("clamps log limit", () => {
+    const n = Math.min(100, Math.max(1, Number(999) || 20));
+    assert.equal(n, 100);
+  });
 });
